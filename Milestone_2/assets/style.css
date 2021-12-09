@@ -1,0 +1,26 @@
+
+:root {
+    --header_color: #2e3a46;
+    --body_color: #1e2d3b;
+
+}
+
+header {
+    background-color: var(--header_color);  
+}
+
+header img {
+    width: 200px;
+}
+
+body {
+    background-color: var(--body_color);
+} 
+
+.myCard {
+    background-color: var(--header_color);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
