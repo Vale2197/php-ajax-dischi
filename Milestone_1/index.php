@@ -74,8 +74,6 @@ $dischi = [
 
 ];
 
-echo 'ciao';
-
 ?>
 
 <!DOCTYPE html>
@@ -91,6 +89,13 @@ echo 'ciao';
 </head>
 <body>
     
+    <header>
+        <div class="container">
+           <div class="logo">
+               <!-- <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green-768x231.png" alt="#"> -->
+           </div>
+        </div>
+    </header>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
