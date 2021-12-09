@@ -89,13 +89,43 @@ $dischi = [
 </head>
 <body>
     
+
     <header>
         <div class="container">
            <div class="logo">
-               <!-- <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green-768x231.png" alt="#"> -->
+               <img class="nav-link" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green-768x231.png" alt="#">
            </div>
         </div>
     </header>
+    
+    <main>
+        <div class="container">
+            <div class="row py-5">
+                       
+                <?php 
+                    foreach ($dischi as $index => $value) {
+                ?>
+
+                <div class="col-2 p-2">
+                    <div class="myCard p-3">
+                        <img class="img-fluid mb-3" src="<?php echo $value['poster'] ?>" alt="#">
+                        <h4>
+                            <?php echo $value['title'] ?>
+                        </h4>
+                        <p class="m-0">
+                            <?php echo $value['author'] ?>
+                        </p>
+                        <p class="m-0">
+                            <?php echo $value['year'] ?>
+                        </p>
+                    </div>
+                </div> 
+                        <!-- / card -->
+                <?php }; ?>
+                    
+            </div>
+        </div>
+    </main>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
