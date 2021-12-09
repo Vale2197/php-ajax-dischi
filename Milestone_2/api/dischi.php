@@ -73,6 +73,5 @@ $dischi = [
 
 ];
 
-header('Content-Type: application/json');
-var_dump(json_encode($dischi));
+echo json_encode($dischi);
 ?>
