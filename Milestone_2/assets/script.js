@@ -5,7 +5,7 @@ const app = new Vue({
     },
     mounted() {
       setTimeout(() => {
-        axios.get('../api/dischi.php')
+        axios.get('./api/dischi.php')
         .then(r => {
           this.dischi = r.data;
           console.log(this.dischi);
